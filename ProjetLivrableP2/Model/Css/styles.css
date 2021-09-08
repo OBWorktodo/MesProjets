@@ -1,3 +1,28 @@
-h1 {
-	color: red;
+/* Header */
+
+header{
+	width: 100%;
 }
+
+h1{
+	color:gray;
+}
+
+section{
+	border-left: solid orange 2px;
+}
+
+
+/* Fin Header */
+
+/* Main */
+
+/* Section Mon Expérience */
+
+/* Fin Section Mon Expérience */
+
+/* Fin Main */
+
+/* Footer */
+
+/* Fin Footer */
