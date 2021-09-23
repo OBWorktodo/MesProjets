@@ -8,10 +8,28 @@ h1{
 	color:gray;
 }
 
-section{
-	border-left: solid orange 2px;
+h2{
+	color: rgb(49, 49, 49);
+	font-weight: bold;
+	text-align: center;
 }
 
+section{
+	border: solid orange 2px;
+	width: 30%;
+	margin-left: 30px;
+}
+
+/* Class réutilisable */
+
+.colorbleu{
+	color:rgb(53, 53, 228);
+}
+
+.flex{
+	display: flex;
+}
+/* Fin Class réutilisable */
 
 /* Fin Header */
 
