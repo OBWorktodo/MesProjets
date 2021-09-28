@@ -3,3 +3,30 @@
 *{
     font-family: 'Raleway', sans-serif;
 }
+
+.blockheader{
+    display: block;
+    align-items: left;
+}
+.blocklogo{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;/* pour que les éléments aillent à la ligne */
+} 
+
+
+.activités{
+    color: black;
+    font-size: 16px;
+    font-weight: bold; 
+}
+
+
+
+
+
