@@ -43,6 +43,136 @@ i{
     border-radius: 20px;
 }
 
+.filter-list{
+    display: flex;
+    align-items: center
+}
+
+.places{
+    display: flex;
+    align-items: center;  
+}
+
+/* les appartements sur Marseille */
+.marsilia{
+display: flex; 
+align-items: center; 
+flex-wrap: wrap;  /* pour le responsive */
+background-color: lightgray;
+border: 1px lightgray
+border-radius: 1em;
+}
+
+.hébergements{
+    display: flex;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+}
+
+.hébergements img{
+    background-color: white;
+    border-radius: 0.5em 0.5em 0em 0em;
+    height: 6.5em;
+}
+
+.hébergements .img1{
+    width: 165px;
+}
+
+.hébergements .img2{
+    width: 165px;
+}
+
+.hébergements .img3{
+    width: 165px;
+}
+
+.hébergements .img4{
+    width: 165px;
+}
+
+.hébergements .img5{
+    width: 165px;
+}
+
+.hébergements .img6{
+    width: 160px;
+}
+
+.fas .fa-star{
+color: rgb(15, 88, 170);
+}
+
+/* bloc hébergements les plus populaires */
+.populaires{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    flex-wrap: wrap;/* pour le responsive */   
+}
+
+.populaires img{
+    background-color: white;
+    border-radius: 0.5em 0.5em 0em 0em;
+    height: 5em;
+}
+
+.populaires .img1{
+    width: 85px;
+}
+
+.populaires .img2{
+    width: 85px;
+}
+
+.populaires .img3{
+    width: 85px;
+}
+
+.actividad{
+    display: flex;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+}
+
+.actividad img{
+    border-radius: 0.5em 0.5em 0em 0em;
+    background-color: white;
+    height: 6em;
+}
+
+.actividad .img1{
+    height: 15em;
+    width: 180px;  
+}
+
+.actividad .img2{
+    height: 7.5em;
+    width: 180px;
+}
+
+.actividad .img3{
+width: 10.5em;
+height: 4.5em;
+}
+
+.actividad .img4{
+    height: 13em ;
+    width: 180px;
+}
+
+.actividad .img5{
+    height: 6.5em;
+    width: 175px;
+}
+
+.actividad .img6{
+    height: 5.5 ;
+    width: 175px;
+}
+
+
+
 
 
 
