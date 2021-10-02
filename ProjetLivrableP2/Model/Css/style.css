@@ -4,196 +4,40 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.blockheader{
-    display: block;
-    align-items: left;
-}
-.blocklogo{
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+.ArticleActivites1 a img{
+    width: 100%;
 }
 
-.blockmenu{
-    align-items: center;
+#activites ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 5em);
+    gap: 2.5em;
 }
 
-nav{
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;/* pour que les éléments aillent à la ligne */
-} 
-/*Fin du header contenant le menu de navigation */
-
-.entracte{
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+#activites ul .ArticleActivites1 {
+    grid-row: 1/6;
 }
 
-
-.research{
-background-color: #0768b8;   
-border-radius: 0.5em 0.5em 0.5em 0.5em;
-color: white;
-font-weight: bold;
+#activites ul .carte-type2 {
+    grid-row: 1/4;
 }
 
-i{
-    background-color: rgb(175, 225, 238);
-    color: rgb(30, 68, 148);
-    border-radius: 20px;
+#activites ul .carte-type3 {
+    grid-row: 4/6;
 }
 
-.filter-list{
-    display: flex;
-    align-items: center
+#activites ul .carte-type4 {
+    grid-row: 1/3;
 }
 
-.places{
-    display: flex;
-    align-items: center;  
+#activites ul .carte-type5 {
+    grid-row: 3/6;
 }
 
-/* les appartements sur Marseille */
-.marsilia{
-display: flex; 
-flex-wrap: wrap;  /* pour le responsive */
-background-color: lightgray;
-border: 1px lightgray
-border-radius: 1em;
+#activites ul li a h3{
+
 }
-
-.hébergements{
-    display: flex;
-    flex-basis: 30%;
-    flex-wrap: wrap;
-}
-
-.hébergements img{
-    background-color: white;
-    border-radius: 0.5em 0.5em 0em 0em;
-    height: 6.5em;
-}
-
-.hébergements .img1{
-    width: 165px;
-}
-
-.hébergements .img2{
-    width: 165px;
-}
-
-.hébergements .img3{
-    width: 165px;
-}
-
-.hébergements .img4{
-    width: 165px;
-}
-
-.hébergements .img5{
-    width: 165px;
-}
-
-.hébergements .img6{
-    width: 160px;
-}
-
-.fas .fa-star{
-color: rgb(15, 88, 170);
-}
-
-/* bloc hébergements les plus populaires */
-.populaires{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 30%;
-    flex-wrap: wrap;/* pour le responsive */  
-    justify-content: space-between; 
-}
-
-.populaires img{
-    background-color: white;
-    border-radius: 0.5em 0.5em 0em 0em;
-    height: 5em;
-}
-
-.populaires .img1{
-    width: 85px;
-}
-
-.populaires .img2{
-    width: 85px;
-}
-
-.populaires .img3{
-    width: 85px;
-}
-
-.actividad{
-    display: flex;
-    flex-basis: 30%;
-    flex-wrap: wrap;
-}
-
-.actividad img{
-    border-radius: 0.5em 0.5em 0em 0em;
-    background-color: white;
-    height: 6em;
-}
-
-.actividad .img1{
-    height: 15em;
-    width: 180px;  
-}
-
-.actividad .img2{
-    height: 7.5em;
-    width: 180px;
-}
-
-.actividad .img3{
-width: 10.5em;
-height: 5.5em;
-}
-
-.actividad .img4{
-    height: 13em ;
-    width: 180px;
-}
-
-.actividad .img5{
-    height: 6.5em;
-    width: 175px;
-}
-
-.actividad .img6{
-    height: 5.5 ;
-    width: 175px;
-}
-
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 35%;
-    justify-content: space-between;
-    background-color: rgb(253, 249, 249);
-    border-radius: 0.5em 0.5em 0em 0em
-}
-
-.block1{
-    justify-content: left;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
