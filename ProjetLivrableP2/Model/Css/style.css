@@ -4,9 +4,7 @@
    font-family: "Raleway", "sans-serif";   
 }
 
-
-
-
+/* Barre de navigation d'en-tête */ 
 #blockmenu{ 
     display: flex;
     align-items: center;
@@ -24,10 +22,45 @@
 }
 
 .click{
-    font-weight: bold;
-    color: black;
-
+    font-weight: bolder;
+    color: rgb(7, 93, 221);
 }
+/* fin de barre de navigation header */
+
+/* Start section de Recherche */
+.sectionRechercher{
+    border:rgb(60, 73, 92) solid
+}
+
+.sectionRechercher h1, 
+.sectionRechercher p{
+    margin-bottom: 1em;
+}
+/* i+input+button */
+.research{
+    display: flex;
+}
+
+.research i{
+    padding: 1em 1.5em;
+    background-color: rgb(228, 234, 240);
+    border-radius: 1em 0 0 1em;
+}
+
+.research input ::placeholder{
+    padding-right: 3.5em;
+    font-size: 2em;
+}
+
+.research button{
+    background-color: rgb(62, 122, 172);
+    padding-right: 5.5em;
+  color: white;
+  border-radius: 0 1em 1em 0;
+  padding: 0 2.5em;
+}
+
+
 
 
 

@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="Model/Plugins/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 
-<body>
+<body><!--Barre de navigation de l'en-tête-->
     <header><!--en-tête de page avec logo Réservia-->
         <section id="blockmenu">
             <nav>
                 <img src="Model/Image/logo/Reservia.svg" alt="logo du site Réservia"><!--trouver l'image correspondant au logo Réservia-->
-                <a href="#">Hébergements</a>
+                <a class="click" href="#">Hébergements</a>
                 <a href="#">Activités</a>
                 <a class="click" href="#">S'inscrire</a>
             </nav>
@@ -22,15 +22,16 @@
     </header>
 
     <main>			
-        <!--Debut Section-->
+        <!--Debut de Section Recherche-->
         <section class="sectionRechercher">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <form>
+            <div class="research">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="search" name="recherche" placeholder="ville, pays"> 			
+                <input type="search" name="recherche" placeholder="Marseille, France"> 			
                 <button>Rechercher</button>
-            </form>
+            </div>
+
             <div class="filtres">
                 <h3>Filtres</h3>
                 <ul>
