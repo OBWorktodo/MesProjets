@@ -1,106 +1,306 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+* {
+    font-family: "Raleway", sans-serif;
+  }
 
-*{
-   font-family: "Raleway", "sans-serif";   
+body{
+    margin:0px;
+    padding: 0px;
 }
 
-/* Barre de navigation d'en-tête */ 
-#blockmenu{ 
+header,main {
+    max-width: 90rem;
+    margin: auto;
+    padding: 0 2rem 0 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+
+/* --- start navigation --- */
+
+.navigation{
+    display: grid;
+    grid-template-columns: 3fr repeat(3,auto);
+    column-gap: 1.5rem;
+    max-height: 7rem;
+}
+
+.navigation div img{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    margin-top: 25px;
 }
 
-#blockmenu img{
-    margin-right: 1025px;
-    padding-left: 15px;
+.navigation a {
+    text-align: center;
+    padding: 3rem 1.25rem;
+    border-top: 3px solid transparent;
 }
 
-#blockmenu nav a{
-    margin-left: 7px;
-    margin-right: 5px;
+.navigation a:hover {
+    color: #0065fc;
+    border-top-color: #0065fc;
 }
 
-.click{
-    font-weight: bolder;
-    color: rgb(7, 93, 221);
-}
-/* fin de barre de navigation header */
-
-/* Start section de Recherche */
-.sectionRechercher{
-    border:rgb(60, 73, 92) solid
+#register {
+    color: #0065fc;
+    font-weight: bold;
 }
 
-.sectionRechercher h1, 
-.sectionRechercher p{
-    margin-bottom: 1em;
-}
-/* i+input+button */
-.research{
-    display: flex;
-}
+/* --- end navigation --- */
 
-.research i{
-    padding: 1em 1.5em;
-    background-color: rgb(228, 234, 240);
-    border-radius: 1em 0 0 1em;
-}
+/* --- start de Section Recherche --- */
 
-.research input ::placeholder{
-    padding-right: 3.5em;
-    font-size: 2em;
-}
-
-.research button{
-    background-color: rgb(62, 122, 172);
-    padding-right: 5.5em;
-  color: white;
-  border-radius: 0 1em 1em 0;
-  padding: 0 2.5em;
-}
-
-
-
-
-
-
-
-
-.ArticleActivites1 a img{
-    width: 100%;
-}
-
-#activites ul {
+main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 5em);
+    grid-template-columns: 6fr 3fr;
+    grid-gap: 2.5em;
+}
+
+#hebergement .hotel-info {
+	padding: 1em 0.8em;
+	font-size: 0.85em;
+}
+
+/* Ma section 1 Début */
+.sectionRechercher {
+	grid-row: 1/2;
+	font-size: 12px;
+}
+
+.sectionRechercher form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.sectionRechercher input {
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    width: 12em;
+}
+
+input:focus {
+    outline: none;
+}
+
+.sectionRechercher button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    display: inline-block;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: #0065FC;
+    border: 2px solid #0065FC;
+}
+
+.sectionRechercher button:hover {
+    color: #0065FC;
+    background-color: white; 
+}
+
+.sectionRechercher form i {
+    border: none;
+    border-radius: 10px 0 0 10px;
+    display: inline-block;
+    padding: 11px 15px;
+    font-size: 14px;
+    color: black;
+    background-color: #efefef;
+    border: 2px solid #efefef;
+}
+
+.filtres {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 14px;
+}
+.filtres h3 {
+    font-size: 14px;
+}
+.filtres ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.filtres .btn {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px 0 10px;
+    border: 2px solid #efefef;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.filtres .btn:hover {
+    color: #0065FC;
+    background-color: #d6e7ff;
+    border-color: #d6e7ff;
+}
+
+.filtres .btn:before {
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    padding: 10px;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #0065FC;
+    background-color: #d6e7ff;
+    border-radius: 50%;
+    outline: #d6e7ff 3px solid;
+    outline-offset: -1px;
+}
+
+.filtres .icon-money:before {
+    content: "\f53a";
+    padding: 10px 8.5px;
+}
+
+.filtres .icon-child:before {
+    content: "\f1ae";
+    padding: 10px 12px;
+}
+
+.filtres .icon-heart:before {
+    content: "\f004";
+}
+
+.filtres .icon-dog:before {
+    content: "\f6d3";
+}
+
+.sectionRechercher p.icon-info {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 25px;
+}
+
+.sectionRechercher .icon-info:before {
+    display: inline-block;
+    position: relative;
+    bottom: 1px;
+    right: 25px;
+    margin: 0 -18px 0 0;
+    padding: 3px 6px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 1;
+    content: "\f129";
+    color: #0065FC;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    border-radius: 50%;
+}
+/* Ma section 1 Fin */
+
+/* Ma section 2 Début */
+#hebergement{
+    grid-row-start: 2;
+    padding: 2.5em;
+    background-color: #efefef;
+    border-radius: 20px;
+}
+
+#hebergement .hotel-cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2.5em;
 }
 
-#activites ul .ArticleActivites1 {
-    grid-row: 1/6;
+#hebergement .hotel-photo {
+    height: 10em;
 }
 
-#activites ul .carte-type2 {
-    grid-row: 1/4;
+#hebergement a {
+    padding: 7px;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    color: #d0d0d2;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
 }
 
-#activites ul .carte-type3 {
-    grid-row: 4/6;
+#hebergement .hotel-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
-#activites ul .carte-type4 {
-    grid-row: 1/3;
+#hebergement a:hover,
+#hebergement a:hover h3,
+#hebergement a:hover p,
+#hebergement a:hover span.checked {
+    color:#0065FC;
 }
 
-#activites ul .carte-type5 {
-    grid-row: 3/6;
+#hebergement a:hover {
+    background-color: #d6e7ff;
+    box-shadow: 0 30px 20px rgb(0, 0, 0, 0.3);
+    transform: translateY(-10px);
 }
 
-#activites ul li a h3{
-
+.fa{
+    color:#d0d0d2;
 }
 
+.checked{
+    color:#0065FC;
+}
 
+#hebergement button {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    background: none;
+    border: none;
+}
+/* End Ma section 2 */
 
+/* Ma section 3 Début */
+#lesPlusPopulaires{
+    grid-row-start: 2;
+    padding: 2.5em;
+    background-color: #efefef;
+    border-radius: 20px;
+}
+
+#lesPlusPopulaires .hotel-cartes {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2.5rem;
+}
