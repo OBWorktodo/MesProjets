@@ -251,6 +251,8 @@ input:focus {
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
 }
 
+
+
 #hebergement .hotel-photo img {
     width: 100%;
     height: 100%;
@@ -291,6 +293,7 @@ input:focus {
 }
 /* End Ma section 2 */
 
+
 /* Ma section 3 Début */
 #lesPlusPopulaires{
     grid-row-start: 2;
@@ -304,3 +307,50 @@ input:focus {
     grid-template-columns: auto;
     gap: 2.5rem;
 }
+
+/* Ma section 4 Debut */
+#activites{
+    grid-row-start: 3;
+    grid-column: 1/ 4;
+}
+#activites ul {
+        grid-column: 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        
+}
+
+#activites li {
+    display: list-item;
+    padding: 7px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    color: #d0d0d2;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.carte-photo
+
+{
+    
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+li.carte-type1{
+    grid-row: 1/3;
+    
+
+}
+
+
+
