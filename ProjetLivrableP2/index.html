@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="Model/Plugins/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 
-<body><!--Barre de navigation de l'en-tête-->
-    <header><!--en-tête de page avec logo Réservia-->
+
+<body>
+    <header>
         <nav class="navigation">
             <div>
                 <img src="Model/Image/logo/Reservia.svg" id="logo" alt="logo">
@@ -21,9 +22,9 @@
             <a id="register" href="#">S'inscrire</a>
         </nav>
     </header>
-
+    
+    
     <main>			
-        <!--Debut Section-->
         <section class="sectionRechercher">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
@@ -44,7 +45,8 @@
             <p class="icon-info">Plus de 500 logements sont disponibles dans cette ville.</p>
         </section>
         <!--Fin Section-->
-        
+    
+
         <!--Debut Section-->
         <section id="hebergement">
             <h2 class="titre-section">Hébergements à Marseille</h2>
@@ -149,8 +151,8 @@
             <button>Afficher plus</button>
         </section>
         <!--Fin Section-->
-
-        <!--Debut Section-->
+    
+        <!--Début de section-->
         <section id="lesPlusPopulaires">
             <h2 class="titre-section">Les plus populaires <i class="fas fa-chart-line"></i></h2>
             <ul class="hotel-cartes">
@@ -212,44 +214,46 @@
         </section>
         <!--Fin Section-->
         
-        <!--Debut Section-->
+        <!--Début de section-->
         <section id="activites">
-            <h2 class="titre-section">Activités à Marseille</h2>
-            <ul>
-                <li class="carte-type1">
-                    <div>
-                        <img class= "carte-photo" class= "carte-photo" src="Model/Image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" />
-                    </div>
+            <h2>Activités à Marseille</h2>
+            <ul class="activites-list">
+                <li class="big big1">
                     <a href="#">
-                       
-                        <h3>Vieux Port</h3>
+                        <img class= "carte-photo" src="Model/Image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" />
+                       <h3>Vieux Port</h3>
                     </a>
                 </li>
-                <li class="carte-type2">
+
+                <li class="medium medium1">
                     <a href="#">
                         <img class= "carte-photo" src="Model/Image/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" />
                         <h3>Fort de Pomègues</h3>
                     </a>
                 </li>
-                <li class="carte-type3">
+
+                <li class="small small1">
                     <a href="#">
                         <img class= "carte-photo" src="Model/Image/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" />
                         <h3>Îles du Frioul</h3>
                     </a>
                 </li>
-                <li class="carte-type4">
+
+                <li class="big big2">
                     <a href="#">
                         <img class= "carte-photo" src="Model/Image/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" />
                         <h3>Parc National des Calanques</h3>
                     </a>
                 </li>
-                <li class="carte-type5">
+
+                <li class="small small2">
                     <a href="#">
                         <img class= "carte-photo" src="Model/Image/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" />
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </a>
                 </li>
-                <li class="carte-type6">
+
+                <li class="medium medium2">
                     <a href="#">
                         <img class= "carte-photo" src="Model/Image/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" />
                         <h3>Parc Longchamp</h3>
@@ -257,35 +261,40 @@
                 </li>
             </ul>
         </section>
-        <!--Fin Section-->
     </main>
+    <!--Fin de section-->
+      
+  
+
 
     <!-- Debut footer -->
     <footer>
-        <section>
-            <h3>À propos</h3>
-            <ul>
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Nos hébergements</h3>
-            <ul>
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Soumettre votre hôtel</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Assistance</h3>
-            <ul>
-                <li><a href="#">Centre d'aide</a></li>
-                <li><a href="#">Nous contacter</a></li>
-            </ul>
-        </section>
+        <div class="footer">
+            <section>
+                <h3>À propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </section>
+        
+            <section>  
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </section>
+        
+            <section>
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </section>
+        </div>
     </footer>
     <!-- fin footer -->
 
