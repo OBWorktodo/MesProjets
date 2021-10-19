@@ -312,17 +312,24 @@ input:focus {
 }
 
 #lesPlusPopulaires .hotel-info{
-text-align: center;
-width: ;
-height: ;
+    display: flex
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 1.5em;
 }
+
+#lesPlusPopulaires .populaire-stars{
+padding-top: 2.5em;
+}
+
+
 
 
 #lesPlusPopulaires a {
     padding: 7px;
     height: 100%;
     display: inline-flex;
-    margin-block: 30px;
+    margin-block: 20px;
     box-sizing: border-box;
     color: #d0d0d2;
     background-color: #ffffff;
