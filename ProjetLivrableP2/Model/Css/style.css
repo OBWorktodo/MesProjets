@@ -314,6 +314,7 @@ input:focus {
     padding: 7px;
     height: 100%;
     display: block;
+    margin-block: 30px;
     box-sizing: border-box;
     color: #d0d0d2;
     background-color: #ffffff;
@@ -323,12 +324,13 @@ input:focus {
 }
 
 
-
 #lesPlusPopulaires .hotel-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+   
+
 }
 
 #lesPlusPopulaires a:hover,
@@ -434,9 +436,11 @@ footer{
 
 footer div{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 2.5em;
     padding-right: 2.5em;
+    align-items: baseline;
 }
 
 footer div section h3 {
@@ -458,16 +462,16 @@ footer div section ul li a:hover {
 /* fin de dernière section: footer */
 
 /* Media queries */
-@media (max-width: 1270px) { 
-
+@media screen and (max-width: 1270px) { 
+width: auto;
 }
 
-@media (max-width: 770px) { 
-    
+@media screen and (max-width: 770px) { 
+ width: auto;   
 }
 
-@media (max-width: 480px) {
-    
+@media screen and (max-width: 480px) {
+width: auto;
 }
 
 
