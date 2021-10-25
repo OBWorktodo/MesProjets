@@ -242,7 +242,7 @@ input:focus {
     height: 100%;
     display: block;
     box-sizing: border-box;
-    color: #d0d0d2;
+    color: #202020;
     background-color: #ffffff;
     border-radius: 20px;
     transition: all 0.3s;
@@ -307,19 +307,17 @@ input:focus {
 }
 
 #lesPlusPopulaires .hotel-photo {
-    height: 10em;
-    width: 10em;
+
 }
 
 #lesPlusPopulaires .hotel-info{
-    display: flex
-    text-align: center;
+    text-align: left;
     padding-top: 1em;
-    padding-left: 1.5em;
+    padding-left: 1.0em;
 }
 
 #lesPlusPopulaires .populaire-stars{
-padding-top: 2.5em;
+    padding-top: 3em;
 }
 
 
@@ -330,8 +328,9 @@ padding-top: 2.5em;
     height: 100%;
     display: inline-flex;
     margin-block: 20px;
+    
     box-sizing: border-box;
-    color: #d0d0d2;
+    color: #202020;
     background-color: #ffffff;
     border-radius: 20px;
     transition: all 0.3s;
@@ -474,18 +473,288 @@ footer div section ul li a:hover {
 }
 /* fin de dernière section: footer */
 
-/* Media queries */
-@media screen and (max-width: 1270px) { 
-width: auto;
+/* Media queries proprietes CSS*/
+@media (max-width: 1270px) {
+    .sectionRechercher {
+		grid-column: 1/3;
+		padding: 0 2em;
+	}
+
+	#lesPlusPopulaires {
+		grid-row: 2/3;
+		grid-column: 1/3;
+		padding: 2em;
+	}
+
+	#lesPlusPopulaires .hotel-cartes {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2em;
+	}
+
+	#lesPlusPopulaires .hotel-photo {
+		
+		height: 8em;
+	}
+
+	#lesPlusPopulaires .hotel-info {
+		padding: 0.5em 1em;
+		font-size: 0.70em;
+	}
+
+	#hebergement {
+		grid-row: 3/4;
+		grid-column: 1/3;
+		padding: 2em;
+	}
+
+	#hebergement .hotel-cartes {
+		gap: 2em;
+	}
+
+	#hebergement .hotel-photo {
+		height: 7em;
+	}
+
+	#hebergement .hotel-info {
+		padding: 0.5em 0.8em;
+		font-size: 0.85em;
+	}
+
+	#activites {
+		grid-row: 4;
+	}
+
+	#activites ul {
+		grid-template-rows: repeat(5, 3em);
+	}
+
+	#activites a h3 {
+		font-size: 0.8em;
+	}
+
+    #lesPlusPopulaires a {
+        width: 80%;
+    }
+
+    #lesPlusPopulaires .hotel-photo img {
+        width: ;
+    }
+    
 }
 
-@media screen and (max-width: 770px) { 
- width: auto;   
-}
 
-@media screen and (max-width: 480px) {
-width: auto;
+@media (max-width: 770px) {
+
+    
+    .sectionRechercher {
+		grid-column: 1/3;
+	}
+
+	#hebergement {
+		grid-row-start: 3;
+		grid-column: 1/3;
+		padding: 2em;
+	}
+
+	#hebergement .hotel-cartes {
+		grid-template-rows: repeat(2, auto);
+		gap: 2em;
+	}
+
+	#hebergement .hotel-photo {
+		height: 5em;
+	}
+
+	#hebergement .hotel-info {
+		padding: 1em 0.6em;
+		font-size: 0.55em;
+	}
+
+	#lesPlusPopulaires {
+		grid-row-start: 2;
+		grid-column: 1/3;
+	}
+
+	#lesPlusPopulaires .hotel-cartes {
+		grid-template-columns: auto;
+	}
+	#activites {
+		grid-row: 4;
+		grid-column: 1/3;
+	}
+
+	#activites ul {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 10em);
+	}
+
+	#activites ul .carte-type1,
+	#activites ul .carte-type2,
+	#activites ul .carte-type3,
+	#activites ul .carte-type4,
+	#activites ul .carte-type5 {
+		grid-row: auto;
+	}
+
+	#activites a h3 {
+		font-size: 1em;
+	}
+
+    #lesPlusPopulaires a {
+        width: 80%;
+    }
 }
+    
+
+@media (max-width: 480px) {
+
+	header {
+		padding: 0 0 2em;
+		position: relative;
+		flex-flow: row wrap;
+		height: auto;
+	}
+
+	.logoReservia {
+		position: relative;
+		left: 2em;
+	}
+
+	header nav {
+		margin: 0.5em 0 0 0;
+		width: 100%;
+	}
+
+	.menu {
+		flex-flow: unset;
+	}
+
+	.menu li {
+		width: 100%;
+	}
+	
+	.menu li:last-child {
+		width: auto;
+	}
+
+	.menu a {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		color: #d0d0d2;
+		text-decoration: none;
+		padding: 0.3em 0;
+		border:none;
+		border-bottom: 2px #d0d0d2 solid;
+		font-size: 0.85em;
+	}
+
+	.menu a.signup {
+		font-weight: bold;
+		position: absolute;
+		display: flex;
+		padding: 0 2em;
+		right: 2em;
+		top: 1.4em;
+		color: #0065FC;
+		justify-content: flex-start;
+		height: auto;
+		border: none;
+	}
+
+	.menu li a:hover, .menu li a.active {
+		color:#0065FC;
+		border: none;
+		border-bottom: 2px #0065FC solid;
+	}
+
+	.menu li a.signup:hover {
+		border:none;
+	}
+
+	main {
+		grid-template-columns: 1fr;
+		padding: 0;
+	}
+		.sectionRechercher {
+			padding: 0 2em;
+		}
+
+		#hebergement {
+			grid-row: 3/4;
+			background: none;
+		}
+
+		#hebergement .hotel-cartes {
+			grid-template-columns: auto;
+		}
+
+		#lesPlusPopulaires {
+			grid-row: 2/3;
+			border-radius: 0;
+		}
+
+		#lesPlusPopulaires .hotel-cartes {
+			grid-template-columns: auto;
+		}
+
+		#hebergement .hotel-photo {
+			height: 7em;
+		}
+
+		#hebergement .hotel-info {
+			padding: 0.5em 0.8em;
+			font-size: 0.85em;
+		}
+
+		#hebergement a:hover,
+		#lesPlusPopulaires a:hover {
+			background-color: #d6e7ff;
+			box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+			transform: translateY(0px);
+		}
+
+		#lesPlusPopulaires .hotel-photo {
+			
+			height: 8em;
+		}
+		
+		#activites {
+			grid-row: 4;
+			grid-column: 1/3;
+			padding: 0 2em;
+		}
+
+		#activites ul {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 10em 10em 10em 10em 10em 10em;
+			gap: 2.5em;
+		}
+
+		#activites ul .carte-type1,
+		#activites ul .carte-type2,
+		#activites ul .carte-type3,
+		#activites ul .carte-type4,
+		#activites ul .carte-type5 {
+			grid-row: auto;
+		}
+
+		#activites a:hover {
+			background-color: #d6e7ff;
+			box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+			transform: translateY(0px);
+		}
+
+        #lesPlusPopulaires a {
+            width: 100%;
+        }
+
+	footer {
+		grid-template-columns: 1fr;
+	}
+}
+    
 
 
 
