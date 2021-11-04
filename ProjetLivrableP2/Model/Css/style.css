@@ -177,6 +177,7 @@ input:focus {
     outline-offset: -1px;
 }
 
+
 .filtres .icon-money:before {
     content: "\f53a";
     padding: 10px 8.5px;
@@ -262,6 +263,8 @@ margin-bottom: 20px;
     border-radius: 15px 15px 0 0;
 }
 
+
+
 #hebergement a:hover,
 #hebergement a:hover h3,
 #hebergement a:hover p,
@@ -318,6 +321,7 @@ margin-bottom: 20px;
     text-align: left;
     padding-top: 1em;
     padding-left: 1.0em;
+    width: 60%;
 }
 
 #lesPlusPopulaires .populaire-stars{
@@ -345,7 +349,7 @@ margin-bottom: 20px;
 
 
 #lesPlusPopulaires .hotel-photo img {
-    width: 151px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
@@ -456,9 +460,10 @@ footer{
 
 footer div{
     display: flex;
-    width: 90%;
+    width: 75%;
     padding: 2.5em;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 footer div section{
@@ -502,7 +507,6 @@ footer div section ul li a:hover {
 	}
 
 	#lesPlusPopulaires .hotel-photo {
-		
 		height: 8em;
 	}
 
@@ -551,7 +555,6 @@ footer div section ul li a:hover {
 
 
 @media (max-width: 770px) {
-
 
     .sectionRechercher {
 		grid-column: 1/3;
@@ -642,52 +645,34 @@ footer div section ul li a:hover {
 	}
 
 	.navigation {
-		grid-template-columns: 1fr;
-    
-	}
-
-	.navigation li {
-		width: 100%;
-	}
-	
-	.navigation li:last-child {
-		width: auto;
+		grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        row-gap: 0.5rem;
+        column-gap: 0;
 	}
 
 	.navigation a {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		color: #d0d0d2;
-		text-decoration: none;
-		padding: 0.3em 0;
-		border:none;
-		border-bottom: 2px #d0d0d2 solid;
-		font-size: 0.85em;
-	}
+        border-bottom: 3px solid #f2f2f2;
+        border-top: 0;
+        padding: 0.9rem;
+    }
 
-	.navigation a.signup {
-		font-weight: bold;
-		position: absolute;
-		display: flex;
-		padding: 0 2em;
-		right: 2em;
-		top: 1.4em;
-		color: #0065FC;
-		justify-content: flex-start;
-		height: auto;
-		border: none;
-	}
+    .navigation a:hover{
+        border-bottom-color: #0065fc ;
+    }
 
-	.navigation li a:hover, .navigation li a.active {
-		color:#0065FC;
-		border: none;
-		border-bottom: 2px #0065FC solid;
-	}
+    .navigation div img{
+        margin-top:0;
+        padding-left: 20px;
+    }
 
-	.navigation li a.signup:hover {
-		border:none;
-	}
+    #register{
+        grid-area: 1/2;
+        padding-left: 4rem;
+        border-top:0;
+        border-bottom:0;
+    }
+
 
 	main {
 		grid-template-columns: 1fr;
