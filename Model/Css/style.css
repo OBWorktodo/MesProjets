@@ -1,3 +1,4 @@
+
 * {
     font-family: "Raleway", sans-serif;
   }
@@ -755,6 +756,8 @@ footer div section ul li a:hover {
 	footer div{
         display: flex;
         flex-direction: column;
+        padding: 0;
+        padding-top: 40px;
 	}
 
     footer div section{
